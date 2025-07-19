@@ -1,0 +1,1 @@
+/usr/local/src/ubuntu/Documents/Programs/rustlang/src/s/target/package/s-0.1.0/target/debug/s: /usr/local/src/ubuntu/Documents/Programs/rustlang/src/s/target/package/s-0.1.0/src/lib.rs /usr/local/src/ubuntu/Documents/Programs/rustlang/src/s/target/package/s-0.1.0/src/main.rs
