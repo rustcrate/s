@@ -1,4 +1,8 @@
-//! A simple crate to get the number of CPU cores available.
+//! A simple system utilities crate.
+//!
+//! Provides functions to get:
+//! - Number of CPU cores available
+//! - Current Unix timestamp
 //!
 //! # Examples
 //!
@@ -10,6 +14,7 @@
 //! The function caches the result internally, so subsequent calls are very fast.
 
 use std::sync::OnceLock;
+use std::time::{SystemTime, UNIX_EPOCH};
 
 /// Returns the number of CPU cores available to the current process.
 ///
@@ -36,6 +41,27 @@ pub fn num_cpu() -> u16 {
     })
 }
 
+/// Returns the current Unix timestamp in seconds since epoch.
+///
+/// This function uses `SystemTime::now()` internally.
+///
+/// # Examples
+///
+/// ```
+/// let timestamp = s::time();
+/// println!("Current timestamp: {}", timestamp);
+/// ```
+///
+/// # Panics
+///
+/// This function will panic if the system time is set to before Unix epoch (1970-01-01).
+pub fn time() -> u64 {
+    SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .unwrap()
+        .as_secs()
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -51,5 +77,12 @@ mod tests {
         let cores1 = num_cpu();
         let cores2 = num_cpu();
         assert_eq!(cores1, cores2, "Subsequent calls should return the same value");
+    }
+
+    #[test]
+    fn test_time() {
+        let t1 = time();
+        let t2 = time();
+        assert!(t2 >= t1, "Time should move forward");
     }
 }

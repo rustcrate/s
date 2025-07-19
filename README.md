@@ -1,6 +1,8 @@
 # s
 
-A simple Rust crate to get the number of CPU cores available to the current process.
+A simple Rust system utilities crate with functions to:
+- Get the number of CPU cores available
+- Get the current Unix timestamp
 
 [Available on crates.io as `s`](https://crates.io/crates/s)
 
@@ -19,6 +21,7 @@ Then in your code:
 fn main() {
     let cores = s::num_cpu();
     println!("Number of CPU cores: {}", cores);
+    println!("Current timestamp: {}", s::time());
 }
 ```
 

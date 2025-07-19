@@ -2,7 +2,7 @@
 name = "s"
 version = "0.1.1"
 edition = "2021"
-description = "A simple Rust sys crate"
+description = "A simple Rust system utilities crate"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/rustcrate/s"
 keywords = ["cpu", "cores", "parallelism", "system"]
