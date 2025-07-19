@@ -3,7 +3,7 @@
 //! # Examples
 //!
 //! ```
-//! let cores = num_cpu::num_cpu();
+//! let cores = s::num_cpu();
 //! println!("This machine has {} CPU cores available", cores);
 //! ```
 //!
@@ -19,7 +19,7 @@ use std::sync::OnceLock;
 /// # Examples
 ///
 /// ```
-/// let cores = num_cpu::num_cpu();
+/// let cores = s::num_cpu();
 /// println!("This machine has {} CPU cores available", cores);
 /// ```
 ///
