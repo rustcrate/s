@@ -1,6 +1,13 @@
 [package]
-name = "s"
+name = "num-cpu"
 version = "0.1.0"
 edition = "2024"
+authors = ["Your Name <your.email@example.com>"]
+description = "A simple crate to get the number of CPU cores available"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yourusername/num-cpu"
+keywords = ["cpu", "cores", "hardware", "parallelism"]
+categories = ["hardware-support", "os"]
+readme = "README.md"
 
 [dependencies]
