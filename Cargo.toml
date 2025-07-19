@@ -1,10 +1,10 @@
 [package]
-name = "num-cpu"
+name = "s"
 version = "0.1.0"
 edition = "2021"
 description = "A simple Rust crate to get the number of CPU cores available to the current process"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/yourusername/num-cpu"
+repository = "https://github.com/rustcrate/s"
 keywords = ["cpu", "cores", "parallelism", "system"]
 categories = ["os"]
 
