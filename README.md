@@ -1,3 +1,10 @@
+We need maintainers and people who can see the value for smaller shortened AI llm input token savings.
+
+Also owns https://crates.io/crates/u (for other utilities)
+
+please make request to add or PR anything useful and frequently used. 
+thx!
+
 # s
 
 A simple Rust system utilities crate with functions to:
