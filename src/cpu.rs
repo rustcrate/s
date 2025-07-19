@@ -1,9 +1,5 @@
 use std::sync::OnceLock;
 
-/// Returns the number of available CPU cores.
-///
-/// The result is cached for fast subsequent calls.
-/// If detection fails, defaults to 1.
 pub fn ncpu() -> u16 {
     static CPU_CORES: OnceLock<u16> = OnceLock::new();
     *CPU_CORES.get_or_init(|| {

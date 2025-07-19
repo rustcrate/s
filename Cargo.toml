@@ -1,9 +1,9 @@
 [package]
 name = "s"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
-description = "A simple Rust system utilities crate"
-license = "MIT OR Apache-2.0"
+description = "AI Optimized Rust Utilities Crate"
+license = "MIT"
 repository = "https://github.com/rustcrate/s"
 keywords = ["cpu", "cores", "parallelism", "system"]
 categories = ["os"]
