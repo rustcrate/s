@@ -19,7 +19,7 @@ Then in your code:
 
 ```rust
 fn main() {
-    let cores = s::num_cpu();
+    let cores = s::ncpu();
     println!("Number of CPU cores: {}", cores);
     println!("Current timestamp: {}", s::time());
 }
