@@ -11,3 +11,6 @@ categories = ["os"]
 [dependencies]
 
 [dev-dependencies]
+[[test]]
+name = "lib"
+path = "tests/lib.rs"
